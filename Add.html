@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add students into database</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="grid">
+            <div class="items-left">
+                <img src="./images/logo4-PhotoRoom.png-PhotoRoom.png" alt="logo" class="logo">
+            </div>
+          
+            <div class="items-right">
+            </div>
+        </div>
+    </nav>
+    <br> <br>
+
+    <div class="container-add">
+        <h2>Add Student</h2>
+        <div class="login2">
+            <form action="/students_profile" method="post">
+                <label for="fname">Name(s)</label>
+                <br>
+                <input type="text" id="fname" name="firstname" placeholder="name..">
+                <br><br>
+                <label for="age">Age</label>
+                <br>
+                <input type="text" id="age" name="age" placeholder="age..">
+                <br><br>
+                <label for="gender">Gender</label>
+                <br>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <label for="class">Class</label>
+                <br>
+                <input type="text" id="class" name="class" placeholder="class..">
+                    <br><br>
+                <label for="address">Address</label>
+                <br>
+                <textarea id="address" name="address" placeholder=" address.." ></textarea>
+                    <br><br>
+                <label for="postal">Postal Address</label>
+                <br>
+                <textarea id="postal" name="postal" placeholder="address.."></textarea>
+                    <br><br>
+                    <label for="parent_info">Guardian/Parent Cell Full Name</label>
+                    <br>
+                    <input type="text" id="parent_info" name="parent_info" placeholder="Full name..">
+                    <br><br>
+                <label for="parent_info">Guardian/Parent Cell Info</label>
+                <br>
+                <input type="text" id="parent_info" name="parent_info" placeholder="Guardian/Parent cell info..">
+                    <br><br>
+                <input class="bttn-new" type="submit" value="Submit">
+            </form>
+        </div>
+            <br><br>
+    </div>
+</body>
+</html>
